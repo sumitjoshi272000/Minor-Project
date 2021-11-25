@@ -1,0 +1,13 @@
+{% load crispy_forms_tags %}
+<form method="POST">
+  <fieldset class="form-group">
+    <legend class="border-bottom mb-4">Register</legend>
+{{form|crispy}}
+{% csrf_token %}
+<br><input type="submit" value="Register"><br><br>
+
+<h2>Already have an account? <a href="{% url 'login' %}">Login First</a></h2>
+
+ </fieldset>
+</form>
+</div>
